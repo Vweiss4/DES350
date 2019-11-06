@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>centered</title>
+</head>
+	<style>
+		body{
+	background-color:black;
+	margin:0px;
+	padding:0px;
+		}
+		
+		#preload{
+			background: url("rgb_1.jpg") no-repeat -9999px -9999px;
+		}
+		
+		.card{
+			position: absolute;
+			left:50%;
+			top:50%;
+			transform: translate(-50%, -50%);
+			width: 40%;
+			height: 90vh;
+			background: url("rgb_1.jpg") no-repeat center;
+			background-size: contain;
+		}
+		
+		.card:hover{
+			background: url("poster-2.gif") no-repeat center;
+			background-size: contain;
+			transition-duration: 1s;
+	
+			
+		}
+		
+		
+		
+	
+	</style>
+
+<body>
+	<div id="preload"></div>
+	<div class="card"></div>
+</body>
+</html>
